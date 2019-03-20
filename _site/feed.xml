@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-21T01:05:25+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">dymyw (Mark Ma)</title><subtitle>冒充少年的老程序猿</subtitle><entry><title type="html">用 GitHub Pages 建个人博客</title><link href="http://localhost:4000/%E7%94%A8-GitHub-Pages-%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="alternate" type="text/html" title="用 GitHub Pages 建个人博客" /><published>2019-03-20T00:00:00+08:00</published><updated>2019-03-20T00:00:00+08:00</updated><id>http://localhost:4000/%E7%94%A8%20GitHub%20Pages%20%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/%E7%94%A8-GitHub-Pages-%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">&lt;p&gt;写博客对于程序员来说，应该算一个优秀的习惯。之前一直把个人主页挂在阿里云上，最近被通知阿里云主机将被到期释放了，于是决定用 GitHub Pages 建个人博客，免费而且没有空间流量限制，彻底远离买空间、域名和备案的烦恼，而且还具有独立自主权&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-21T01:15:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">dymyw (Mark Ma)</title><subtitle>冒充少年的老程序猿</subtitle><entry><title type="html">用 GitHub Pages 建个人博客</title><link href="http://localhost:4000/%E7%94%A8-GitHub-Pages-%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="alternate" type="text/html" title="用 GitHub Pages 建个人博客" /><published>2019-03-20T00:00:00+08:00</published><updated>2019-03-20T00:00:00+08:00</updated><id>http://localhost:4000/%E7%94%A8%20GitHub%20Pages%20%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</id><content type="html" xml:base="http://localhost:4000/%E7%94%A8-GitHub-Pages-%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">&lt;p&gt;写博客对于程序员来说，应该算一个优秀的习惯。之前一直把个人主页挂在阿里云上，最近被通知阿里云主机将被到期释放了，于是决定用 GitHub Pages 建个人博客，免费而且没有空间流量限制，彻底远离买空间、域名和备案的烦恼，而且还具有独立自主权&lt;/p&gt;
 
 &lt;h3 id=&quot;什么是-github-pages-呢&quot;&gt;什么是 GitHub Pages 呢？&lt;/h3&gt;
 
@@ -255,4 +255,11 @@ paginator   每当 paginate 配置选项被设置了的时候，这个变量就�
 ![有帮助的截图](http://localhost:4000/assets/screenshot.jpg)
 
 你可以直接 [下载 PDF](http://localhost:4000/assets/mydoc.pdf)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="github" /><category term="blog" /><summary type="html">写博客对于程序员来说，应该算一个优秀的习惯。之前一直把个人主页挂在阿里云上，最近被通知阿里云主机将被到期释放了，于是决定用 GitHub Pages 建个人博客，免费而且没有空间流量限制，彻底远离买空间、域名和备案的烦恼，而且还具有独立自主权</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;todo&quot;&gt;Todo&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;自动化构建&lt;/li&gt;
+  &lt;li&gt;Logo&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="github" /><category term="blog" /><summary type="html">写博客对于程序员来说，应该算一个优秀的习惯。之前一直把个人主页挂在阿里云上，最近被通知阿里云主机将被到期释放了，于是决定用 GitHub Pages 建个人博客，免费而且没有空间流量限制，彻底远离买空间、域名和备案的烦恼，而且还具有独立自主权</summary></entry></feed>
