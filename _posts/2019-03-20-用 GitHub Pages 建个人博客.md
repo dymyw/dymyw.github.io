@@ -1,8 +1,9 @@
 ---
+layout: post
 title: 用 GitHub Pages 建个人博客
+categories: github
+tags: github blog
 ---
-
-## 用 GitHub Pages 建个人博客
 
 写博客对于程序员来说，应该算一个优秀的习惯。之前一直把个人主页挂在阿里云上，最近被通知阿里云主机将被到期释放了，于是决定用 GitHub Pages 建个人博客，免费而且没有空间流量限制，彻底远离买空间、域名和备案的烦恼，而且还具有独立自主权
 
@@ -33,9 +34,9 @@ Settings
 GitHub Pages 通过运行 [Jekyll](https://www.jekyll.com.cn/) 来构建你的站点  
 它是一个简单免费的生成博客网页的工具
 
-借助 RubyGems 安装 Jekyll
+借助 RubyGems 安装 Jekyll、bundle
 
-    sudo gem install jekyll
+    sudo gem install jekyll bundle
 
 > 所有的 Jekyll 的 gem 依赖包都会被自动安装，所以你完全不用去担心
 
@@ -59,9 +60,9 @@ GitHub Pages 通过运行 [Jekyll](https://www.jekyll.com.cn/) 来构建你的�
         // 编辑 Gemfile 文件，添加依赖
         // 查看 _config.yml - plugins
         source 'https://rubygems.org'
-        gem ‘jekyll-sitemap’
-        gem ‘jekyll-feed’
-        gem ‘jekyll-paginate’
+        gem 'jekyll-paginate'
+        gem 'jekyll-sitemap'
+        gem 'jekyll-feed'
 
     // 构建
     bundle install
@@ -148,8 +149,14 @@ YAML 头信息
                             test
             categories  设置多个分类属性
                             [test, sample]
+                            test sample
+                                - github
+                                - blog
             tags        增加一个或者多个标签
                             [test, sample]
+                            test sample
+                                - github
+                                - blog
 
 常用变量
 
