@@ -269,6 +269,5 @@ Settings - Add Disqus To Site
 ### Todo
 
 - 评论
-- Logo
 - 图片（像某牛云存储之类的云存储服务）
 - 源码语法高亮
