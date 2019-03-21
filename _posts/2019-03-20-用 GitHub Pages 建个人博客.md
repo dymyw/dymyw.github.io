@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 用 GitHub Pages 建个人博客
-categories: github
 tags: github blog
 ---
 
@@ -38,7 +37,9 @@ GitHub Pages 通过运行 [Jekyll](https://www.jekyll.com.cn/) 来构建你的�
 
     sudo gem install jekyll bundle
 
-> 所有的 Jekyll 的 gem 依赖包都会被自动安装，所以你完全不用去担心
+> Rubyems 的功能类似于 linux 下的 apt-get，是个包管理器，可以从远程下载所需的包  
+> 所有的 Jekyll 的 gem 依赖包都会被自动安装，所以你完全不用去担心  
+> bundle 类似于 composer，用来管理 gem 包
 
 安装 Jekyll 插件
 
@@ -57,23 +58,24 @@ GitHub Pages 通过运行 [Jekyll](https://www.jekyll.com.cn/) 来构建你的�
     // 创建 Gemfile 文件（如果没有）
     bundle init
 
-        // 编辑 Gemfile 文件，添加依赖
-        // 查看 _config.yml - plugins
+        // 编辑 Gemfile 文件，添加依赖（类似于 composer 中的 composer.json）
+            // 查看 _config.yml - plugins
         source 'https://rubygems.org'
         gem 'jekyll-paginate'
         gem 'jekyll-sitemap'
         gem 'jekyll-feed'
 
-    // 构建
+    // 安装项目下 Gemfile 文件中指定的项目依赖库
     bundle install
+        // 会生成一个 Gemfile.lock（类似于 composer 中的 composer.lock）
 
-开启本地浏览模式
+    // 构建页面
+    jekyll build
 
+    // 开启本地浏览模式（构建页面 + web 服务，开启状态下实时构建）
     jekyll serve
-
-    // 或者
-
-    bundle exec jekyll server
+        // 或者
+        bundle exec jekyll server
 
         // 查看进程
         ps aux | grep jekyll
@@ -237,7 +239,30 @@ YAML 头信息
 
     你可以直接 [下载 PDF]({{ site.url }}/assets/mydoc.pdf)
 
+### 绑定域名
+
+在根目录下新建一个名为 CNAME 的文本文件，写入你要绑定的域名，如 `www.mayw.tech`
+
+DNS 要新建一条 CNAME 记录，指向 dymyw.github.io（dymyw 换成你的 github 名称）
+
+### 评论功能设置（未完成）
+
+登录 [Disqus](https://disqus.com/) 注册一个账号（开 vpn 比较快点）
+
+Settings - Add Disqus To Site
+
+- Site name
+- unique disqus URL（shortname）
+
+设置 `_config.yml` 中的 disqus，填入 shortname
+
+在需要开启评论功能的文章的 YAML 头信息加一行 `comments: true` 就好了
+
 ### Todo
 
 - 自动化构建
 - Logo
+- 评论
+- 流量
+- 图片（像某牛云存储之类的云存储服务）
+- 源码语法高亮
