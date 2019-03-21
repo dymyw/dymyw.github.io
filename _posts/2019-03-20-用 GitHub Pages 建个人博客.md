@@ -239,6 +239,10 @@ YAML 头信息
 
     你可以直接 [下载 PDF]({{ site.url }}/assets/mydoc.pdf)
 
+### 文章发布
+
+[使用 Travis CI 自动部署 Github Pages]({% post_url 2019-03-21-使用 Travis CI 自动部署 Github Pages %})
+
 ### 绑定域名
 
 在根目录下新建一个名为 CNAME 的文本文件，写入你要绑定的域名，如 `www.mayw.tech`
@@ -258,11 +262,13 @@ Settings - Add Disqus To Site
 
 在需要开启评论功能的文章的 YAML 头信息加一行 `comments: true` 就好了
 
+### 访问统计
+
+使用 [百度统计](https://tongji.baidu.com/)
+
 ### Todo
 
-- 自动化构建
-- Logo
 - 评论
-- 流量
+- Logo
 - 图片（像某牛云存储之类的云存储服务）
 - 源码语法高亮
