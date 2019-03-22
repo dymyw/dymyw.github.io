@@ -12,4 +12,4 @@ You must walk the road which must walk to be beautiful, only then may walk the r
 
 ### Contact me
 
-[dymayongwei@163.com](mailto:dymayongwei@163.com)
+[{{ site.footer-links.email }}](mailto:{{ site.footer-links.email }})

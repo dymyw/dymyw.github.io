@@ -86,7 +86,7 @@ Jekyll 目录结构
 
     .
     ├── _config.yml         保存配置数据
-    ├── _drafts             未发布的文章
+    ├── _drafts             未发布的文章，没有日期（构建加 --drafts 参数）
     |   ├── begin-with-the-crazy-ideas.textile
     |   └── on-simplicity-in-technology.markdown
     ├── _includes           你可以加载这些包含部分到你的布局或者文章中以方便重用
@@ -159,6 +159,27 @@ YAML 头信息
                             test sample
                                 - github
                                 - blog
+
+永久连接
+
+    可以在 _config.yml、YAML 头信息上加 permalink 来实现
+
+    模版变量
+        year        文章所在文件的年份
+        month       文章所在文件的月份，格式如 `01, 10`
+        i_month     文章所在文件的月份，格式如 `1, 10`
+        day         文章所在文件的日期，格式如 `01, 20`
+        i_day       文章所在文件的日期，格式如 `1, 20`
+        title       文章所在文件的标题
+        categories  为文章配置的目录
+                        Jekyll 可以自动将 `//` 转换为 `/` ，所以如果没有目录，会自动忽略
+    已经建好的链接类型
+        date        /:categories/:year/:month/:day/:title.html
+        pretty      /:categories/:year/:month/:day/:title/
+        none        /:categories/:title.htm
+
+    也可以自定义，如
+        permalink: /:title/
 
 常用变量
 
