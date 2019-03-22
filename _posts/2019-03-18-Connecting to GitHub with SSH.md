@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 通过 SSH 连接 GitHub
+categories: work tech
 tags: github ssh
 ---
 

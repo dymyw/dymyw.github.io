@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 使用 Travis CI 自动部署 Github Pages
+categories: work tech
 tags: 
     - github
     - blog

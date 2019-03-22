@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 用 GitHub Pages 建个人博客
+categories: work tech
 tags: github blog
 ---
 
