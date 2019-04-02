@@ -90,20 +90,20 @@ package main
 import (
     "bytes"
     "fmt"
+    "strings"
 )
 
 func main() {
     s := "aabbabba"
-    newString := changeStr(s)
-    fmt.Println(newString)
-    // ^#a#a#b#b#a#b#b#a#$
-
-    fmt.Println(manacher(newString))
-    // 7
+    fmt.Println(manacher(s))
+    // abbabba
 }
 
 // 马拉车算法
-func manacher(s string) int {
+func manacher(s string) string {
+    char := byte('#')
+    s = changeStr(s, char)
+
     // 存储以字符 N[i] 为中心的最长回文字串的最右字符到 N[i] 的长度
     p := make([]int, len(s))
     // mx 之前计算中最长回文子串的右端点的最大值，id 为取得 mx 的回文中心位置
@@ -142,16 +142,23 @@ func manacher(s string) int {
         }
     }
 
-    // 返回最大回文串长度
-    return p[maxCenterIndex] - 1
+    // 最大回文串长度
+    //maxLength := p[maxCenterIndex] - 1
+
+    // 返回最长回文
+    start := maxCenterIndex - p[maxCenterIndex] + 1
+    end := maxCenterIndex + p[maxCenterIndex]
+    substr := s[start:end]
+
+    return strings.Replace(substr, string(char), "", -1)
 }
 
 // 改变字符串
-func changeStr(s string) string {
+func changeStr(s string, char byte) string {
     var new bytes.Buffer
     new.WriteString("^")
     for _, b := range []byte(s) {
-        new.WriteByte('#')
+        new.WriteByte(char)
         new.WriteByte(b)
     }
     new.WriteString("#$")
