@@ -156,12 +156,14 @@ func manacher(s string) string {
 // 改变字符串
 func changeStr(s string, char byte) string {
     var new bytes.Buffer
-    new.WriteString("^")
+
+    new.WriteByte('^')
     for _, b := range []byte(s) {
         new.WriteByte(char)
         new.WriteByte(b)
     }
-    new.WriteString("#$")
+    new.WriteByte(char)
+    new.WriteByte('$')
 
     return new.String()
 }
