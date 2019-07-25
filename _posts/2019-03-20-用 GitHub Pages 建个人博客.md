@@ -271,18 +271,13 @@ YAML 头信息
 
 DNS 要新建一条 CNAME 记录，指向 dymyw.github.io（dymyw 换成你的 github 名称）
 
-### 评论功能设置（未完成）
+### 评论功能设置
 
-登录 [Disqus](https://disqus.com/) 注册一个账号（开 vpn 比较快点）
+关于插件
 
-Settings - Add Disqus To Site
+- Disqus: 需要翻墙
 
-- Site name
-- unique disqus URL（shortname）
-
-设置 `_config.yml` 中的 disqus，填入 shortname
-
-在需要开启评论功能的文章的 YAML 头信息加一行 `comments: true` 就好了
+最后找了 [Valine](https://valine.js.org/)，一款快速、简洁且高效的无后端评论系统
 
 ### 访问统计
 
@@ -290,6 +285,5 @@ Settings - Add Disqus To Site
 
 ### Todo
 
-- 评论
 - 图片（像某牛云存储之类的云存储服务）
 - 源码语法高亮

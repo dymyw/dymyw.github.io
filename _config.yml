@@ -110,3 +110,10 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+valine_comment:
+  enable: true
+  leancloud_appid: WSaP1Lt7YFwPEDi5YIV1akGx-gzGzoHsz
+  leancloud_appkey: EfcxWD3bsh2CDpdOXp1KLnr7
+  placeholder: "Just go go"
+  avatar: identicon

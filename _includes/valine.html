@@ -1,0 +1,20 @@
+{% unless site.duoshuo_shortname
+    or site.disqus_shortname
+    or site.hypercomments_id
+    or site.duoshuo and site.duoshuo.shortname %}
+
+{% if site.valine_comment.enable %}
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<div id="comment" class="vcomment"></div>
+<script>
+    new Valine({
+        el: '.vcomment',
+        app_id: '{{ site.valine_comment.leancloud_appid }}',
+        app_key: '{{ site.valine_comment.leancloud_appkey }}',
+        placeholder: '{{ site.valine_comment.placeholder }}',
+        avatar: '{{ site.valine_comment.avatar }}',
+    });
+</script>
+{% endif %}
+{% endunless %}
